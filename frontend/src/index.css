@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App-wide polish */
+html,
+body {
+  height: 100%;
+}
+
+.card {
+  @apply rounded-2xl bg-white shadow-sm ring-1 ring-slate-200;
+}
