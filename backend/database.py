@@ -22,7 +22,7 @@ class Base(DeclarativeBase):
 
 def init_db() -> None:
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    from import db_models  # noqa: F401
+import db_models  # noqa: F401
 
     Base.metadata.create_all(bind=engine)
 
