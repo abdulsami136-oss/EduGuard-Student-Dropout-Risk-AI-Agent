@@ -1,2 +1,0 @@
-# EduGuard backend package
-
