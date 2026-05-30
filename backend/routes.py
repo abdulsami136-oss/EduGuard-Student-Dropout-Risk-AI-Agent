@@ -7,10 +7,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, EmailStr, Field, field_validator
 from sqlalchemy.orm import Session
 
-from .auth_utils import hash_password, new_token, verify_password
-from .database import get_db
-from .db_models import User
-from .model import (
+from auth_utils import hash_password, new_token, verify_password
+from database import get_db
+from db_models import User
+from model import (
     TrainedArtifacts,
     generate_suggestions,
     load_or_train,
